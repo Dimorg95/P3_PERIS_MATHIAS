@@ -1,0 +1,16 @@
+//Bouton Animé
+
+.btn__anime {
+  background: $color-btn-primary;
+  border-radius: 5rem;
+  padding: 1.2rem 2rem;
+  font-size: 2rem;
+  border: none;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 1000ms, box-shadow 1000ms;
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0rem 0rem 0.2rem 0rem rgb(32, 32, 32);
+  }
+}

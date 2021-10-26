@@ -29,7 +29,7 @@
 }
 
 .place {
-  @include flex-center;
+  @extend %flex-center;
   height: 3.5rem;
 
   &__icon {
@@ -39,33 +39,18 @@
   &__search {
     border: none;
     outline: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
     background: $color-light-grey;
-    width: 10rem;
-    height: 2rem;
+    width: 12rem;
+    height: 3rem;
   }
 }
 
 .intro {
-  @include flex-column;
+  @extend %flex-column;
   text-align: center;
 
   height: 20rem;
-}
-
-.intro--btn__anime {
-  background: $color-btn-primary;
-  border-radius: 5rem;
-  padding: 1rem 1rem;
-  font-size: 1rem;
-  border: none;
-  color: #fff;
-  opacity: 1;
-  transition: opacity 1000ms, box-shadow 1000ms;
-  &:hover {
-    opacity: 0.8;
-    box-shadow: 0rem 0rem 0.2rem 0rem;
-  }
 }
