@@ -3,8 +3,4 @@
 @import "./Utils/mixins";
 @import "./Utils/placeholders";
 
-body {
-  background: $color-primary;
-
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
+@import "./Bases/typography";
