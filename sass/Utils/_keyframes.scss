@@ -1,0 +1,31 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    border-left-color: $color-tertiary;
+    border-right-color: $color-tertiary;
+    border-bottom-color: $color-primary;
+    border-top-color: $color-secondary;
+  }
+
+  75% {
+    border-left-color: $color-secondary;
+    border-right-color: $color-secondary;
+    border-top-color: $color-tertiary;
+    border-bottom-color: $color-primary;
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes transparent {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

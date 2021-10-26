@@ -1,0 +1,8 @@
+header {
+  background: white;
+  @include flex-center;
+  & img {
+    width: 40%;
+    margin: 1.5rem;
+  }
+}
