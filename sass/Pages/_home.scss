@@ -31,6 +31,7 @@
 .place {
   @extend %flex-center;
   height: 3.5rem;
+  background: $color-grey;
 
   &__icon {
     font-size: 1.5rem;
@@ -42,7 +43,7 @@
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
-    background: $color-light-grey;
+    background: $color-grey;
     width: 12rem;
     height: 2rem;
   }
@@ -52,5 +53,46 @@
   @extend %flex-column;
   text-align: center;
 
-  height: 20rem;
+  height: 30rem;
+}
+
+.fonction {
+  @extend %flex-column;
+  height: 35rem;
+  width: 100%;
+  background: white;
+  & ul {
+    width: 90%;
+    & li a {
+      font-size: 2rem;
+      @extend %flex-center;
+      text-decoration: none;
+      width: 100%;
+      line-height: 6.5rem;
+      margin-bottom: 2rem;
+      border-radius: 2rem;
+      box-shadow: 0.2rem 0.2rem 1rem 0rem rgb(150, 150, 150);
+      background: $color-light-grey;
+      position: relative;
+    }
+  }
+}
+.numbers {
+  position: absolute;
+  margin-right: 2rem;
+  @extend %flex-center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10rem;
+  background: $color-primary;
+  left: -8;
+  & span {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.fonction__icon {
+  margin-right: 2rem;
 }
