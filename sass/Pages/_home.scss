@@ -64,7 +64,6 @@
   & ul {
     width: 90%;
     & li a {
-      font-size: 2rem;
       @extend %flex-center;
       text-decoration: none;
       width: 100%;
@@ -74,6 +73,13 @@
       box-shadow: 0.2rem 0.2rem 1rem 0rem rgb(150, 150, 150);
       background: $color-light-grey;
       position: relative;
+      transition: all 1000ms;
+      &:hover {
+        background: #efe1ffc6;
+        & > .fonction__icon {
+          color: $color-primary;
+        }
+      }
     }
   }
 }
@@ -91,8 +97,4 @@
     color: white;
     font-weight: bold;
   }
-}
-
-.fonction__icon {
-  margin-right: 2rem;
 }
