@@ -101,12 +101,47 @@ h3 {
   margin-top: 1rem;
 }
 
+footer h2 {
+  color: white;
+  padding-top: 2rem;
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-icon {
+  padding-right: 1rem;
+}
+.footer-icon_marge {
+  padding-right: 1.3rem;
+  margin-left: 0.4rem;
+}
+
 header {
   background: white;
 }
 header img {
   width: 40%;
   margin: 1.5rem;
+}
+
+footer {
+  height: 18rem;
+  background: #353535;
+}
+footer ul {
+  height: 5rem;
+  margin-left: 2rem;
+}
+footer ul li {
+  margin-bottom: 1rem;
+}
+footer ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn__anime {
@@ -257,8 +292,8 @@ header img {
 }
 
 .restaurant {
-  height: 100%;
   width: 100%;
+  margin-bottom: 3rem;
 }
 .restaurant h2 {
   margin: 4rem 0rem 2rem 2.2rem;

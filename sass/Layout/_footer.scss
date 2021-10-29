@@ -1,0 +1,19 @@
+footer {
+  height: 18rem;
+  background: #353535;
+  & ul {
+    height: 5rem;
+    margin-left: 2rem;
+    & li {
+      margin-bottom: 1rem;
+    }
+
+    & a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+}
