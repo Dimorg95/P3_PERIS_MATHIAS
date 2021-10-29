@@ -19,6 +19,10 @@ h2 {
   font-size: 2.5rem;
   margin-right: 10rem;
 }
+
+h3 {
+  font-family: "Roboto", sans-serif;
+}
 //Typo de Fonctionnement
 .fonction h3 {
   font-family: "Roboto", sans-serif;
@@ -31,4 +35,14 @@ h2 {
   font-size: 1.8rem;
   color: grey;
   transition: all 1000ms;
+}
+
+//Typo de Restaurant
+.restaurant h3 {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+.restaurant p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }

@@ -1,4 +1,4 @@
-.numbers, .fonction ul li a, .place, header {
+.restaurant--cards, .numbers, .fonction ul li a, .place, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +40,17 @@
     opacity: 0;
   }
 }
+@keyframes pulsation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 body,
 html {
   font-family: "Roboto", sans-serif;
@@ -63,6 +74,10 @@ h2 {
   margin-right: 10rem;
 }
 
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
 .fonction h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
@@ -75,6 +90,16 @@ h2 {
   font-size: 1.8rem;
   color: grey;
   transition: all 1000ms;
+}
+
+.restaurant h3 {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.restaurant p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 header {
@@ -98,6 +123,42 @@ header img {
 .btn__anime:hover {
   opacity: 0.8;
   box-shadow: 0rem 0rem 0.5rem 0rem #202020;
+}
+
+.heart {
+  margin-right: 2rem;
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.heart__visible {
+  position: absolute;
+  font-size: 2rem;
+  z-index: 1;
+  font-weight: lighter;
+  transition: opacity 1000ms;
+}
+.heart__visible:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+.heart__visible:hover + .heart__invisible {
+  opacity: 1;
+  animation: pulsation 600ms ease-in-out infinite;
+}
+.heart__invisible {
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1000ms;
+  background: -webkit-linear-gradient(top, #9356dc 30%, #ff79da 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .loader_wrapper {
@@ -194,6 +255,37 @@ header img {
   font-size: 1.5rem;
   color: white;
   font-weight: bold;
+}
+
+.restaurant {
+  height: 100%;
+  width: 100%;
+}
+.restaurant h2 {
+  margin: 4rem 0rem 2rem 2.2rem;
+}
+
+.restaurant--cards__place {
+  background: white;
+  box-shadow: 0.2rem 0.2rem 1rem 0rem #969696;
+  border-radius: 1.5rem;
+  height: 25rem;
+  width: 90%;
+}
+.restaurant--cards__place img {
+  height: 18rem;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  margin: 1rem 0rem 0rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

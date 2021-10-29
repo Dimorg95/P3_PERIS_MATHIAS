@@ -98,3 +98,36 @@
     font-weight: bold;
   }
 }
+.restaurant {
+  height: 100%;
+  width: 100%;
+  & h2 {
+    margin: 4rem 0rem 2rem 2.2rem;
+  }
+}
+
+.restaurant--cards {
+  @extend %flex-center;
+
+  &__place {
+    background: white;
+    box-shadow: 0.2rem 0.2rem 1rem 0rem rgb(150, 150, 150);
+    border-radius: 1.5rem;
+    height: 25rem;
+    width: 90%;
+    & img {
+      height: 18rem;
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+    }
+  }
+}
+figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  margin: 1rem 0rem 0rem 1rem;
+}

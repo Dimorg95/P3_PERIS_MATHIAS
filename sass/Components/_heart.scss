@@ -1,0 +1,43 @@
+//Test du coeur!!!TEST CONCLUANT
+.heart {
+  margin-right: 2rem;
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: row;
+
+  &__visible {
+    position: absolute;
+    font-size: 2rem;
+    z-index: 1;
+    font-weight: lighter;
+    transition: opacity 1000ms;
+    &:hover {
+      opacity: 0;
+      cursor: pointer;
+      & + .heart__invisible {
+        opacity: 1;
+        animation: pulsation 600ms ease-in-out infinite;
+      }
+    }
+  }
+
+  &__invisible {
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: opacity 1000ms;
+    background: -webkit-linear-gradient(
+      top,
+      $color-primary 30%,
+      $color-secondary 70%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
