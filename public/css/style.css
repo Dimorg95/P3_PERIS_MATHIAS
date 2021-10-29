@@ -79,7 +79,6 @@ h3 {
 }
 
 .fonction h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
   color: black;
   font-weight: 600;
@@ -265,12 +264,17 @@ header img {
   margin: 4rem 0rem 2rem 2.2rem;
 }
 
+.restaurant--cards {
+  flex-direction: column;
+}
 .restaurant--cards__place {
   background: white;
   box-shadow: 0.2rem 0.2rem 1rem 0rem #969696;
   border-radius: 1.5rem;
   height: 25rem;
   width: 90%;
+  margin-bottom: 1.5rem;
+  position: relative;
 }
 .restaurant--cards__place img {
   height: 18rem;
@@ -278,6 +282,21 @@ header img {
   object-fit: cover;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
+}
+
+.new {
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+  position: absolute;
+  color: #008768;
+  border-radius: 0.3rem;
+  background: #99e2d0;
+  font-weight: 600;
+  width: 5.3rem;
+  font-size: 1.4rem;
+  padding: 0.8rem 0.8rem;
+  top: 1rem;
+  right: 1rem;
 }
 
 figcaption {
