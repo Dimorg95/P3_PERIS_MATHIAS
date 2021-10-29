@@ -2,14 +2,14 @@
 .heart {
   margin-right: 2rem;
   position: relative;
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
   display: flex;
   flex-direction: row;
 
   &__visible {
     position: absolute;
-    font-size: 2rem;
+    font-size: 2.5rem;
     z-index: 1;
     font-weight: lighter;
     transition: opacity 1000ms;
@@ -24,7 +24,7 @@
   }
 
   &__invisible {
-    font-size: 2rem;
+    font-size: 2.5rem;
     position: absolute;
     top: 0;
     left: 0;
