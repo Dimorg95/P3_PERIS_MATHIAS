@@ -4,6 +4,10 @@ html {
   font-size: 62.5%;
   background: $color-light-grey;
 }
+a:focus {
+  border: none;
+  outline: none;
+}
 
 h1 {
   font-family: "Shrikhand", sans-serif;
@@ -34,6 +38,9 @@ h3 {
   font-size: 1.8rem;
   color: grey;
   transition: all 1000ms;
+}
+.margin {
+  margin-left: 2rem;
 }
 
 //Typo de Restaurant

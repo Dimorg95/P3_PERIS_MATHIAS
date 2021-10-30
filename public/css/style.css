@@ -58,6 +58,11 @@ html {
   background: #f6f6f6;
 }
 
+a:focus {
+  border: none;
+  outline: none;
+}
+
 h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 2.5rem;
@@ -89,6 +94,10 @@ h3 {
   font-size: 1.8rem;
   color: grey;
   transition: all 1000ms;
+}
+
+.margin {
+  margin-left: 2rem;
 }
 
 .restaurant h3 {
@@ -298,6 +307,11 @@ footer ul a {
 .restaurant h2 {
   margin: 4rem 0rem 2rem 2.2rem;
 }
+.restaurant a {
+  width: 90%;
+  color: black;
+  text-decoration: none;
+}
 
 .restaurant--cards {
   flex-direction: column;
@@ -307,7 +321,6 @@ footer ul a {
   box-shadow: 0.2rem 0.2rem 1rem 0rem #969696;
   border-radius: 1.5rem;
   height: 25rem;
-  width: 90%;
   margin-bottom: 1.5rem;
   position: relative;
 }
