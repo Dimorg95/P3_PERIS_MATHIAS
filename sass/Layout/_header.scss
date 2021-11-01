@@ -1,8 +1,21 @@
 header {
   background: white;
   @extend %flex-center;
+  position: relative;
   & img {
     width: 40%;
     margin: 1.5rem;
+  }
+  & a {
+    position: absolute;
+    left: 3rem;
+    font-size: 1.5rem;
+    color: black;
+    @include tablet {
+      font-size: 2rem;
+      @include desktop {
+        font-size: 2.5rem;
+      }
+    }
   }
 }
