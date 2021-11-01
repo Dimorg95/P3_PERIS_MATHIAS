@@ -1,0 +1,24 @@
+/*Media Query*/
+@mixin large {
+  @media screen and(min-width: map-get($breakpoint, large)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and(min-width: map-get($breakpoint, desktop)) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and(min-width: map-get($breakpoint, laptop)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and(min-width: map-get($breakpoint, tablet)) {
+    @content;
+  }
+}

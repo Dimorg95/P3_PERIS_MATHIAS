@@ -9,3 +9,11 @@ $color-btn-primary: linear-gradient(
   $color-primary 100%
 );
 $shadow-primary: 0.2rem 0.2rem 1rem 0rem rgb(150, 150, 150);
+/*Media Query*/
+
+$breakpoint: (
+  tablet: 768px,
+  laptop: 1024px,
+  desktop: 1400px,
+  large: 1900px,
+);

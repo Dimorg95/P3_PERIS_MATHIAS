@@ -61,8 +61,10 @@
   height: 35rem;
   width: 100%;
   background: white;
+  position: relative;
   & ul {
     width: 90%;
+    margin-top: 6rem;
     & li a {
       @extend %flex-center;
       text-decoration: none;
@@ -120,15 +122,20 @@
     box-shadow: $shadow-primary;
     border-radius: 1.5rem;
     height: 25rem;
-
     margin-bottom: 1.5rem;
     position: relative;
+    @include desktop {
+      height: 35rem;
+    }
     & img {
       height: 18rem;
       width: 100%;
       object-fit: cover;
       border-top-left-radius: 1.5rem;
       border-top-right-radius: 1.5rem;
+      @include desktop {
+        height: 28rem;
+      }
     }
   }
 }

@@ -1,3 +1,5 @@
+/*Media Query*/
+/*Media Query*/
 .restaurant--cards, .numbers, .fonction ul li a, .place, header {
   display: flex;
   justify-content: center;
@@ -81,6 +83,12 @@ h2 {
 
 h3 {
   font-family: "Roboto", sans-serif;
+}
+
+.fonction h2 {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
 }
 
 .fonction h3 {
@@ -263,9 +271,11 @@ footer ul a {
   height: 35rem;
   width: 100%;
   background: white;
+  position: relative;
 }
 .fonction ul {
   width: 90%;
+  margin-top: 6rem;
 }
 .fonction ul li a {
   text-decoration: none;
@@ -324,12 +334,22 @@ footer ul a {
   margin-bottom: 1.5rem;
   position: relative;
 }
+@media screen and (min-width: 1400px) {
+  .restaurant--cards__place {
+    height: 35rem;
+  }
+}
 .restaurant--cards__place img {
   height: 18rem;
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
+}
+@media screen and (min-width: 1400px) {
+  .restaurant--cards__place img {
+    height: 28rem;
+  }
 }
 
 .new {
