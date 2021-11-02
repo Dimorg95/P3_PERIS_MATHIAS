@@ -3,7 +3,6 @@ header {
   @extend %flex-center;
   position: relative;
   & img {
-    width: 40%;
     margin: 1.5rem;
   }
   & a {
@@ -18,4 +17,12 @@ header {
       }
     }
   }
+}
+
+.header--fix {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
