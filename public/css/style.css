@@ -90,10 +90,6 @@ h2 {
   margin-right: 10rem;
 }
 
-h3 {
-  font-family: "Roboto", sans-serif;
-}
-
 .fonction h2 {
   position: absolute;
   top: 3rem;
@@ -425,7 +421,6 @@ figcaption {
 }
 
 .menu {
-  border: 0.1rem solid black;
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
   background-color: #f6f6f6;
@@ -443,6 +438,13 @@ figcaption {
     margin-top: 40rem;
   }
 }
+.menu--titre {
+  display: flex;
+  margin: 2rem 0rem 2rem 0rem;
+}
+.menu--categorie {
+  width: 90%;
+}
 
 .menu h3 {
   font-size: 1.8rem;
@@ -458,9 +460,9 @@ figcaption {
 }
 
 .menu .card--plats {
-  margin: 1.5rem 0rem;
-  height: 4.5rem;
-  width: 25rem;
+  margin: 2rem 0rem;
+  height: 6.5rem;
+  width: 100%;
   border-radius: 1.5rem;
   box-sizing: border-box;
   display: flex;
@@ -489,7 +491,7 @@ figcaption {
 }
 .menu .card--plats:hover > .card--plats__cost {
   transform: translate(-4rem);
-  margin-left: 3rem;
+  margin-left: 4rem;
 }
 .menu .card--plats:hover > .card--plats__invisible {
   transform: translate(-4rem);
@@ -500,7 +502,7 @@ figcaption {
 }
 
 .card--plats__description {
-  padding: 0.3rem;
+  padding-left: 1rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -510,17 +512,19 @@ figcaption {
   flex: 1;
 }
 .card--plats__description h4 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-top: 0.3rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-weight: 700;
 }
 .card--plats__description p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .card--plats__cost {
@@ -544,6 +548,10 @@ figcaption {
 .card--plats__invisible .around {
   font-size: 1.5rem;
   color: white;
+}
+
+.btn__anime {
+  margin-bottom: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,7 +11,6 @@
 }
 .menu {
   @extend %flex-column;
-  border: 0.1rem solid black;
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
   background-color: $color-light-grey;
@@ -23,6 +22,13 @@
   }
   @include laptop {
     margin-top: 40rem;
+  }
+  &--titre {
+    display: flex;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  &--categorie {
+    width: 90%;
   }
 }
 
@@ -39,10 +45,10 @@
 }
 
 .menu .card--plats {
-  margin: 1.5rem 0rem;
+  margin: 2rem 0rem;
 
-  height: 4.5rem;
-  width: 25rem;
+  height: 6.5rem;
+  width: 100%;
   border-radius: 1.5rem;
   box-sizing: border-box;
   display: flex;
@@ -60,7 +66,7 @@
 
     & > .card--plats__cost {
       transform: translate(-4rem);
-      margin-left: 3rem;
+      margin-left: 4rem;
     }
     & > .card--plats__invisible {
       transform: translate(-4rem);
@@ -73,7 +79,7 @@
 }
 
 .card--plats__description {
-  padding: 0.3rem;
+  padding-left: 1rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -83,17 +89,19 @@
   flex: 1;
 
   & h4 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 0.3rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-weight: 700;
   }
   & p {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -119,4 +127,8 @@
     font-size: 1.5rem;
     color: white;
   }
+}
+
+.btn__anime {
+  margin-bottom: 3rem;
 }
