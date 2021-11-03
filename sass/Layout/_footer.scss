@@ -1,9 +1,19 @@
 footer {
   height: 18rem;
   background: #353535;
+  @include laptop {
+    display: flex;
+    align-items: center;
+  }
   & ul {
     height: 5rem;
     margin-left: 2rem;
+    @include laptop {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
     & li {
       margin-bottom: 1rem;
     }

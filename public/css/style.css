@@ -13,6 +13,12 @@
   align-items: center;
 }
 
+.card--plats__description, .card--plats__description p, .card--plats__description h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -86,7 +92,7 @@ p {
 
 h2 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-right: 10rem;
 }
 
@@ -130,6 +136,11 @@ footer h2 {
   margin-left: 2rem;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 1024px) {
+  footer h2 {
+    padding-top: 1.2rem;
+  }
+}
 
 .footer-icon {
   padding-right: 1rem;
@@ -137,6 +148,17 @@ footer h2 {
 .footer-icon_marge {
   padding-right: 1.3rem;
   margin-left: 0.4rem;
+}
+
+.card--plats__description h4 {
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+  font-weight: 700;
+}
+
+.card--plats__description p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 header {
@@ -175,9 +197,23 @@ footer {
   height: 18rem;
   background: #353535;
 }
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    align-items: center;
+  }
+}
 footer ul {
   height: 5rem;
   margin-left: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
 }
 footer ul li {
   margin-bottom: 1rem;
@@ -202,7 +238,7 @@ footer ul a {
 }
 .btn__anime:hover {
   opacity: 0.8;
-  box-shadow: 0.2rem 0.2rem 1rem 0rem #969696;
+  box-shadow: 0.2rem 0.3rem 1.5rem 0rem #969696;
 }
 
 .heart {
@@ -313,7 +349,7 @@ footer ul a {
   line-height: 6.5rem;
   margin-bottom: 2rem;
   border-radius: 2rem;
-  box-shadow: 0.2rem 0.2rem 1rem 0rem #969696;
+  box-shadow: 0.2rem 0.3rem 1.5rem 0rem #969696;
   background: #f6f6f6;
   position: relative;
   transition: all 1000ms;
@@ -359,7 +395,7 @@ footer ul a {
 }
 .restaurant--cards__place {
   background: white;
-  box-shadow: 0.2rem 0.2rem 1rem 0rem #969696;
+  box-shadow: 0.2rem 0.3rem 1.5rem 0rem #969696;
   border-radius: 1.5rem;
   height: 25rem;
   margin-bottom: 1.5rem;
@@ -440,6 +476,8 @@ figcaption {
 }
 .menu--titre {
   display: flex;
+  justify-content: space-between;
+  width: 90%;
   margin: 2rem 0rem 2rem 0rem;
 }
 .menu--categorie {
@@ -528,28 +566,10 @@ figcaption {
 
 .card--plats__description {
   padding-left: 1rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
-}
-.card--plats__description h4 {
-  font-size: 1.8rem;
-  margin-top: 0.3rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-weight: 700;
-}
-.card--plats__description p {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
 }
 
 .card--plats__cost {

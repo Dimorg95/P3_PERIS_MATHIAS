@@ -12,3 +12,10 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
+//Overflow
+%overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
