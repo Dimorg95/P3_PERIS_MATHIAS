@@ -29,6 +29,23 @@
   }
   &--categorie {
     width: 90%;
+    margin-bottom: 2rem;
+    @include laptop {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+.menu--card {
+  width: 90%;
+  @extend %flex-column;
+  @include laptop {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
 }
 
@@ -52,9 +69,12 @@
   border-radius: 1.5rem;
   box-sizing: border-box;
   display: flex;
-  box-shadow: $shadow-primary;
+  box-shadow: $shadow-secondary;
   background: white;
   overflow: hidden;
+  @include laptop {
+    width: 90%;
+  }
   animation: loading-menu 3000ms both;
   @for $i from 1 through 5 {
     &:nth-child(#{$i}) {
@@ -130,5 +150,7 @@
 }
 
 .btn__anime {
-  margin-bottom: 3rem;
+  margin: 1rem 0rem 8rem 0rem;
+  padding: 1.5rem 5rem;
+  box-shadow: $shadow-secondary;
 }

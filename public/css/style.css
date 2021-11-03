@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.menu, .fonction, .intro {
+.menu--card, .menu, .fonction, .intro {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -202,7 +202,7 @@ footer ul a {
 }
 .btn__anime:hover {
   opacity: 0.8;
-  box-shadow: 0rem 0rem 0.5rem 0rem #202020;
+  box-shadow: 0.2rem 0.2rem 1rem 0rem #969696;
 }
 
 .heart {
@@ -444,6 +444,26 @@ figcaption {
 }
 .menu--categorie {
   width: 90%;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .menu--categorie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.menu--card {
+  width: 90%;
+}
+@media screen and (min-width: 1024px) {
+  .menu--card {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
 .menu h3 {
@@ -466,10 +486,15 @@ figcaption {
   border-radius: 1.5rem;
   box-sizing: border-box;
   display: flex;
-  box-shadow: 0.2rem 0.2rem 1rem 0rem #969696;
+  box-shadow: 0.2rem 0.2rem 1rem 0rem rgba(169, 167, 167, 0.687);
   background: white;
   overflow: hidden;
   animation: loading-menu 3000ms both;
+}
+@media screen and (min-width: 1024px) {
+  .menu .card--plats {
+    width: 90%;
+  }
 }
 .menu .card--plats:nth-child(1) {
   animation-delay: 0.2s;
@@ -551,7 +576,9 @@ figcaption {
 }
 
 .btn__anime {
-  margin-bottom: 3rem;
+  margin: 1rem 0rem 8rem 0rem;
+  padding: 1.5rem 5rem;
+  box-shadow: 0.2rem 0.2rem 1rem 0rem rgba(169, 167, 167, 0.687);
 }
 
 /*# sourceMappingURL=style.css.map */
