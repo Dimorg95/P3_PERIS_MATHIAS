@@ -51,10 +51,6 @@
   }
 }
 
-.menu h3 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-}
 .underline {
   margin-top: 0.5rem;
   width: 4.2rem;
@@ -65,7 +61,6 @@
 
 .menu .card--plats {
   margin: 2rem 0rem;
-
   height: 6.5rem;
   width: 100%;
   border-radius: 1.5rem;
@@ -118,9 +113,7 @@
 }
 
 .card--plats__invisible {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   padding: 1.2rem 2rem;
   margin-right: -6rem;
   border-radius: 0rem 1.5rem 1.5rem 0rem;

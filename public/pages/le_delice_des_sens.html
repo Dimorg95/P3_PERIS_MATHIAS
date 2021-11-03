@@ -2,6 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <script
       src="https://kit.fontawesome.com/ef3f829da5.js"
       crossorigin="anonymous"
@@ -13,8 +14,159 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="public/css/reset.css" />
-    <link rel="stylesheet" href="public/css/style.css" />
-    <title>OhMyFood</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>À la française</title>
   </head>
+  <body>
+    <header class="header--fix">
+      <a href="/index.html"> <i class="fas fa-arrow-left"></i></a>
+      <img src="../logo/ohmyfood@2x.svg" alt="Logo OhMyFood" />
+    </header>
+
+    <main>
+      <img
+        class="intro--menu"
+        src="../images/a_la_francaise.jpg"
+        alt="Image Restaurant a la française"
+      />
+
+      <section class="menu">
+        <!--Titre du restaurant-->
+        <div class="menu--titre">
+          <h2>À la française</h2>
+          <div class="heart">
+            <i class="far fa-heart heart__visible"></i>
+            <i class="fas fa-heart heart__invisible"></i>
+          </div>
+        </div>
+        <div class="menu--card">
+          <!--Debut des entrées-->
+          <div class="menu--categorie">
+            <h3>Entrées</h3>
+            <div class="underline"></div>
+            <div class="card--plats">
+              <div class="card--plats__description">
+                <h4>Tartare de poulpe acidulé ffffff</h4>
+                <p>Aux zests d'orange</p>
+              </div>
+              <div class="card--plats__cost"><span>25€</span></div>
+              <div class="card--plats__invisible">
+                <i class="fas fa-check-circle around"></i>
+              </div>
+            </div>
+            <div class="card--plats">
+              <div class="card--plats__description">
+                <h4>Velouté de légumes d'antan</h4>
+                <p>Carotte,panais,topinambour</p>
+              </div>
+              <div class="card--plats__cost"><span>35€</span></div>
+              <div class="card--plats__invisible">
+                <i class="fas fa-check-circle around"></i>
+              </div>
+            </div>
+            <div class="card--plats">
+              <div class="card--plats__description">
+                <h4>Soupe a l'oignon</h4>
+                <p>Revitée</p>
+              </div>
+              <div class="card--plats__cost"><span>20€</span></div>
+              <div class="card--plats__invisible">
+                <i class="fas fa-check-circle around"></i>
+              </div>
+            </div>
+          </div>
+          <!--DEBUT DES PLATS-->
+          <div class="menu--categorie">
+            <h3>Plats</h3>
+            <div class="underline"></div>
+            <div class="card--plats">
+              <div class="card--plats__description">
+                <h4>Coquilles Saint-Jacques</h4>
+                <p>Accompagnées d'une purée de panais</p>
+              </div>
+              <div class="card--plats__cost"><span>40€</span></div>
+              <div class="card--plats__invisible">
+                <i class="fas fa-check-circle around"></i>
+              </div>
+            </div>
+            <div class="card--plats">
+              <div class="card--plats__description">
+                <h4>Magret de canard</h4>
+                <p>Et parmentier de pommes de terres</p>
+              </div>
+              <div class="card--plats__cost"><span>35€</span></div>
+              <div class="card--plats__invisible">
+                <i class="fas fa-check-circle around"></i>
+              </div>
+            </div>
+            <div class="card--plats">
+              <div class="card--plats__description">
+                <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                <p>Sur son lit de gnocchis aux légumes</p>
+              </div>
+              <div class="card--plats__cost"><span>44€</span></div>
+              <div class="card--plats__invisible">
+                <i class="fas fa-check-circle around"></i>
+              </div>
+            </div>
+          </div>
+          <!--DEBUT DES DESSERTS-->
+          <div class="menu--categorie">
+            <h3>Desserts</h3>
+            <div class="underline"></div>
+            <div class="card--plats">
+              <div class="card--plats__description">
+                <h4>Pétales de violettes glacés</h4>
+                <p>Et purée de noisettes</p>
+              </div>
+              <div class="card--plats__cost"><span>18€</span></div>
+              <div class="card--plats__invisible">
+                <i class="fas fa-check-circle around"></i>
+              </div>
+            </div>
+            <div class="card--plats">
+              <div class="card--plats__description">
+                <h4>Fondant au chocolat</h4>
+                <p>Revisité</p>
+              </div>
+              <div class="card--plats__cost"><span>22€</span></div>
+              <div class="card--plats__invisible">
+                <i class="fas fa-check-circle around"></i>
+              </div>
+            </div>
+            <div class="card--plats">
+              <div class="card--plats__description">
+                <h4>Millefeuille croustillant</h4>
+                <p>Myrtilles et pâte d'amande</p>
+              </div>
+              <div class="card--plats__cost"><span>23€</span></div>
+              <div class="card--plats__invisible">
+                <i class="fas fa-check-circle around"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn__anime">Commander</button>
+      </section>
+    </main>
+    <footer>
+      <h2>ohmyfood</h2>
+      <ul>
+        <li>
+          <a href="#"
+            ><i class="fas fa-utensils footer-icon footer-icon_marge"></i
+            >Proposer un restaurant
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-hands-helping footer-icon"></i>Devenir partenaire
+          </a>
+        </li>
+        <li><a href="#">Mentions légales </a></li>
+        <li><a href="mailto:ohmyfood_contactgmail.com">Contact </a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
