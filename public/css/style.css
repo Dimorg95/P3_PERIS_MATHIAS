@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Media Query*/
 /*Media Query*/
 .card--plats__invisible, .restaurant--cards, .numbers, .fonction ul li a, .place, header {
@@ -19,6 +20,7 @@
   overflow: hidden;
 }
 
+/*Animation du loader*/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -190,6 +192,7 @@ header a {
   }
 }
 
+/*Header fixer sur les menu*/
 .header--fix {
   z-index: 4;
   position: fixed;
@@ -231,6 +234,7 @@ footer ul a {
   font-family: "Roboto", sans-serif;
 }
 
+/*Bouton Animé*/
 .btn__anime {
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   border-radius: 5rem;
@@ -244,6 +248,13 @@ footer ul a {
 .btn__anime:hover {
   opacity: 0.8;
   box-shadow: 0rem 0.2rem 0.7rem 0.2rem rgba(49, 49, 49, 0.62);
+}
+
+/*Bouton du menu*/
+.btn__menu {
+  margin: 1rem 0rem 8rem 0rem;
+  padding: 1.5rem 5rem;
+  box-shadow: 0.2rem 0.1rem 0.7rem 0rem #c5c5c5;
 }
 
 .heart {
@@ -461,6 +472,7 @@ figcaption {
   }
 }
 
+/*Menu*/
 .menu {
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
@@ -590,12 +602,6 @@ figcaption {
 .card--plats__invisible .around {
   font-size: 2rem;
   color: white;
-}
-
-.btn__anime {
-  margin: 1rem 0rem 8rem 0rem;
-  padding: 1.5rem 5rem;
-  box-shadow: 0.2rem 0.1rem 0.7rem 0rem #c5c5c5;
 }
 
 /*# sourceMappingURL=style.css.map */

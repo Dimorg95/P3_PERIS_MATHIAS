@@ -1,4 +1,4 @@
-//Bouton Animé
+/*Bouton Animé*/
 
 .btn__anime {
   background: $color-btn-primary;
@@ -13,4 +13,10 @@
     opacity: 0.8;
     box-shadow: $shadow-secondary;
   }
+}
+/*Bouton du menu*/
+.btn__menu {
+  margin: 1rem 0rem 8rem 0rem;
+  padding: 1.5rem 5rem;
+  box-shadow: $shadow-primary;
 }
