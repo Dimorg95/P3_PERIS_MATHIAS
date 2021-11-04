@@ -243,7 +243,7 @@ footer ul a {
 }
 .btn__anime:hover {
   opacity: 0.8;
-  box-shadow: 0.2rem 0.3rem 1.5rem 0rem #969696;
+  box-shadow: 0rem 0.2rem 0.7rem 0.2rem rgba(49, 49, 49, 0.62);
 }
 
 .heart {
@@ -354,7 +354,7 @@ footer ul a {
   line-height: 6.5rem;
   margin-bottom: 2rem;
   border-radius: 2rem;
-  box-shadow: 0.2rem 0.3rem 1.5rem 0rem #969696;
+  box-shadow: 0.2rem 0.1rem 0.7rem 0rem #c5c5c5;
   background: #f6f6f6;
   position: relative;
   transition: all 1000ms;
@@ -400,7 +400,7 @@ footer ul a {
 }
 .restaurant--cards__place {
   background: white;
-  box-shadow: 0.2rem 0.3rem 1.5rem 0rem #969696;
+  box-shadow: 0.2rem 0.1rem 0.7rem 0rem #c5c5c5;
   border-radius: 1.5rem;
   height: 25rem;
   margin-bottom: 1.5rem;
@@ -524,7 +524,7 @@ figcaption {
   border-radius: 1.5rem;
   box-sizing: border-box;
   display: flex;
-  box-shadow: 0.2rem 0.2rem 1rem 0rem rgba(169, 167, 167, 0.687);
+  box-shadow: 0.2rem 0.1rem 0.7rem 0rem #c5c5c5;
   background: white;
   overflow: hidden;
   animation: loading-menu 3000ms both;
@@ -595,7 +595,7 @@ figcaption {
 .btn__anime {
   margin: 1rem 0rem 8rem 0rem;
   padding: 1.5rem 5rem;
-  box-shadow: 0.2rem 0.2rem 1rem 0rem rgba(169, 167, 167, 0.687);
+  box-shadow: 0.2rem 0.1rem 0.7rem 0rem #c5c5c5;
 }
 
 /*# sourceMappingURL=style.css.map */

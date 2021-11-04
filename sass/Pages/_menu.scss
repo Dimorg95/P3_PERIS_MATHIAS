@@ -66,7 +66,7 @@
   border-radius: 1.5rem;
   box-sizing: border-box;
   display: flex;
-  box-shadow: $shadow-secondary;
+  box-shadow: $shadow-primary;
   background: white;
   overflow: hidden;
   @include laptop {
@@ -128,5 +128,5 @@
 .btn__anime {
   margin: 1rem 0rem 8rem 0rem;
   padding: 1.5rem 5rem;
-  box-shadow: $shadow-secondary;
+  box-shadow: $shadow-primary;
 }

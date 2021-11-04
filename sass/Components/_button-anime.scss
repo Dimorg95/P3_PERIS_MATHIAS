@@ -11,6 +11,6 @@
   transition: opacity 800ms, box-shadow 800ms;
   &:hover {
     opacity: 0.8;
-    box-shadow: $shadow-primary;
+    box-shadow: $shadow-secondary;
   }
 }
