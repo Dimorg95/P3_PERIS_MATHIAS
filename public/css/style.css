@@ -573,7 +573,7 @@ figcaption {
   transform: translate(-6rem);
 }
 .menu .card--plats:hover > .card--plats__invisible .around {
-  transition: all 300ms 850ms;
+  transition: all 500ms 250ms;
   transform: rotate(360deg);
 }
 
