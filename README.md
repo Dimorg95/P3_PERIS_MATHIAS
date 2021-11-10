@@ -1,6 +1,6 @@
 # Ohmyfood V1
 
-![Logo ohmyfood](./public/logo/ohmyfood@2x.svg "Logo Ohmyfood)
+![ohmyfood@2x.svg](/public/logo/ohmyfood@2x.svg "Logo Ohmyfood)
 
 Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.
 
